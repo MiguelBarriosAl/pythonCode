@@ -1,0 +1,40 @@
+Method 1
+import pandas as pd
+import time
+
+data = pd.read_csv("2018_Yellow_Taxi_Trip_Data.csv")
+
+t0 = time.time() # Initial Count
+
+row = (data.shape)[0] # Total Rows
+sumColumn = (data["tip_amount"].sum())/row # Mean of "tip_amount" column
+
+t1 = time.time() # Final Count
+tiempo = round(t1-t0,0) # Total Time
+
+print("Número de filas: \n", row)
+print("Suma Total tip_amount: \n", meanColumn)
+print("Tiempo total de ejecución: \n", tiempo)
+
+Method 2
+import pandas as pd
+import time
+
+t0 = time.time() # Initial Count
+
+data = pd.read_csv("2018_Yellow_Taxi_Trip_Data.csv")
+
+n=0
+tipAmount1 = 0
+for index, i in data.iterrows():
+
+tipAmount = i['tip_amount']
+tipAmount1 = tipAmount1 + tipAmount # Value of "tipAmount"
+n = n + 1 # Rows
+meanTipAmount = tipAmount1/n # Mean of "tipAmount"
+t1 = time.time() # Final Count
+tiempo = round(t1-t0,0) # Total Time
+
+print("Suma Total tip_amount: \n", meanTipAmount)
+print("Número de filas: \n", n)
+print("Tiempo total de ejecución: \n", tiempo)
