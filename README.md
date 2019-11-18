@@ -1,4 +1,4 @@
-# pythonCode
+# First Git Repository
 
 Easy Challenge to know different methods for to get the average of an attribute
 
