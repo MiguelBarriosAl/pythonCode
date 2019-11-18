@@ -2,7 +2,7 @@
 
 Easy Challenge to know different methods for to get the average of an attribute
 
-Build the following and make it run as fast as you possibly can using Python 3 (vanilla). The faster it runs, the more you will impress us!
+Build the following and make it run as fast as you possibly can using Python 3. The faster it runs, the more you will impress us!
 
 Your code should:
 
