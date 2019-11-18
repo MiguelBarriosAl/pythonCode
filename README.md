@@ -12,4 +12,4 @@ Your code should:
 
 All of that in the most efficient way you can come up with.
 
-That's it. Make it fly!
+That's it!
